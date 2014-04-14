@@ -26,3 +26,9 @@
     width: 100%;
     font-size: 20px;
 }
+
+.reveal .legend {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
