@@ -111,9 +111,12 @@ config.vm.provision "ansible" do |ansible|
                         <li>vagrant init</li>
                         <li>vagrant up</li>
                         <li>vagrant provision</li>
+                        <li>vagrant status</li>
+                        <li>vagrant ssh</li>
                         <li>vagrant reload</li>
                         <li>vagrant suspend</li>
                         <li>vagrant halt</li>
+                        <li>vagrant destroy</li>
                     </ul>
                 </section>
 
@@ -125,7 +128,7 @@ config.vm.provision "ansible" do |ansible|
                         <li>Works over SSH so no need for agents on remote hosts</li>
                         <li>Uses YAML markup for commands</li>
                         <li>Great documentation</li>
-                        <li>Clear and easy to understand</li>
+                        <li>Very logical commands and syntax</li>
                     </ul>
 				</section>
 
@@ -191,6 +194,13 @@ config.vm.provision "ansible" do |ansible|
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 					<h2>Live Demo</h2>
+                    <ul>
+                        <li>Create fresh working path</li>
+                        <li>Checkout project from Github</li>
+                        <li>Add record to /etc/hosts (192.168.33.10 development)</li>
+                        <li>Run `vagrant up`</li>
+                        <li>Point browser to http://development/</li>
+                    </ul>
 				</section>
 
 				<section>
@@ -199,7 +209,7 @@ config.vm.provision "ansible" do |ansible|
 						<li>Vagrant: <a href="http://vagrantup.com">www.vagrantup.com</a></li>
 						<li>Vagrant boxes: <a href="http://www.vagrantbox.es/">www.vagrantbox.es/</a></li>
 						<li>Ansible: <a href="http://www.ansible.com/home">www.ansible.com</a></li>
-						<li>Debian webdev example server: <a href="https://github.com/doublehops/debian-webdev-environment">github.com/doublehops/debian-webdev-environment</a></li>
+						<li>Debian webdev Vagrant/Ansible scripts: <a href="https://github.com/doublehops/debian-webdev-environment">github.com/doublehops/debian-webdev-environment</a></li>
 					</ul>
 				</section>
 
