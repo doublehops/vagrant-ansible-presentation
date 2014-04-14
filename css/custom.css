@@ -7,12 +7,21 @@
     text-transform: none;
 }
 
+.reveal li, .reveal p {
+    font-size: 1.0em;
+}
+
 .reveal .margin-top-medium {
     margin-top: 100px;
 }
 
-.reveal pre {
+.reveal .filename {
     margin-top: 75px;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+.reveal pre {
     border: 1px solid #999;
     width: 100%;
     font-size: 20px;
