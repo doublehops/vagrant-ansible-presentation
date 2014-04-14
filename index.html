@@ -25,6 +25,7 @@
 			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
+		<link rel="stylesheet" href="/var/www/phpMelb/css/custom.css">
 		<!--[if lt IE 9]>
 		<script src="reveal/lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -36,11 +37,62 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h2>Using Vagrant and Ansible to Configure Development Machines</h2>
+
+					<h3 class="margin-top-medium">Damien Buttler</h3>
+                    <ul>
+                        <li>damien@doublehops.com</li>
+                        <li>www.doublehops.com</li>
+                        <li>@doublehops</li>
+                    </ul>
+				</section>
+
+                <section>
+                    <h2>What Advantages are there in Running Virtual Machines for Development?</h2>
+                    <ul>
+                        <li>Scripted environments that can shared with team with each environment identical</li>
+                        <li>No need to have PHP, Nginx or other packages installed on host machine</li>
+                        <li>Each project can have unique environments and package versions</li>
+                        <li>Scripts can be used to configure production environments</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Using Vagrant and Ansible for Configure Environments</h2>
+                    <ul>
+                        <li>Vagrant as the virtual machine handler</li>
+                        <li>Ansible is the conconfiguration tool</li>
+                    </ul>
+                    <p class="margin-top-medium">Together they make small work out of a complex task</p>
+                </section>
+
+                <section>
+                    <h2>What do we Need</h2>
+                    <ul>
+                        <li>Virtual machine package such as Virtualbox or VMware</li>
+                        <li>Vagrant</li>
+                        <li>Ansible</li>
+                    </ul>
+                    <p class="margin-top-medium">All software runs on Windows, Mac and popular *nix systems.</p>
+                </section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>Vagrant</h2>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					    Vagrant is a lightweight, easy to use wrapper that will create a virtual machine, install an OS and pass control to a script for configuration.
+					</p>
+				</section>
+
+                <section>
+                    <h2>Configure Vagrant with a Single Configuration File<h2>
+                </section>
+
+				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+					<h2>Ansible</h2>
+					<p>
+                        What is Ansible?
 					</p>
 				</section>
 
@@ -226,7 +278,7 @@ Reveal.addEventListener( 'customevent', function() {
 				</section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
+					<h2>iackground Transitions</h2>
 					<p>
 						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
 					</p>
@@ -345,7 +397,11 @@ function linkify( selector ) {
 
 				<section>
 					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<h3>Damien Buttler</h3>
+                    <ul>
+                        <li>@doublehops</li>
+                        <li>damien@doublehops.com</li>
+                    </ul>
 				</section>
 
 			</div>
