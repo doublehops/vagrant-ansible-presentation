@@ -86,7 +86,23 @@
 				</section>
 
                 <section>
-                    <h2>Configure Vagrant with a Single Configuration File<h2>
+                    <h2>Configure Vagrant with a Single File<h2>
+                    <pre><code>
+config.vm.box = "wheezy"
+
+config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210-nocm.box"
+
+config.vm.hostname = 'debian-web';
+
+config.vm.network :private_network, ip: "192.168.33.10"
+
+config.vm.synced_folder "./www", "/var/www", id: "vagrant-root", :group=>'www-data', :mount_options=>['dmode=775,fmode=775']
+
+
+config.vm.provision "ansible" do |ansible|
+   ansible.playbook = "provisioners/playbook.yml"
+   ansible.inventory_path = "provisioners/ansible_hosts"
+                    </code></pre>
                 </section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">

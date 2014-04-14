@@ -10,3 +10,10 @@
 .reveal .margin-top-medium {
     margin-top: 100px;
 }
+
+.reveal pre {
+    margin-top: 75px;
+    border: 1px solid #999;
+    width: 100%;
+    font-size: 20px;
+}
