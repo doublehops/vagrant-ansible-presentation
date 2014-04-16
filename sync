@@ -1,0 +1,6 @@
+#!/bin/bash
+
+src=.
+dest=dhweb:/var/www/doublehops.com/public_html/presentations/vagrant-ansible
+
+rsync -avz --exclude-from rsync-exclude $src $dest
